@@ -1,0 +1,17 @@
+# Template file for 'mandown'
+pkgname=mandown
+version=1.0.3
+revision=1
+build_style=gnu-makefile
+hostmakedepends="ncurses-devel libxml2-devel pkg-config"
+makedepends=""
+short_desc="man-page inspired Markdown viewer"
+maintainer="Mek101 <mek101-dev.inv@slmail.me>"
+license="MIT"
+homepage="https://github.com/Titor8115/mandown"
+distfiles="https://github.com/Titor8115/mandown/archive/v${version}.tar.gz"
+checksum=df92ca18315a7507ac93e2246d9ee2ad5363dcf4d266b57d5eb10b4123afa25c
+
+do_install() {
+	vlicense LICENSE
+}
